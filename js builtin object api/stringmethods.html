@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="d1">
+        <button onClick="abc()">Get Symbols</button>
+        <script>
+            function abc(){
+                var x = document.getElementById("d1").value;
+                for(var i=0;i<=x.length-1;i++){
+                    if(x.charCodeAt(i)>=65 && x.charCodeAt(i)<=90)
+                    console.log(x[i])
+                }
+            }
+            // for(var j=65;j<=125;j++){
+            //     console.log(j,String.fromCharCode(j))
+            // }
+        </script>
+    </body>
+</html>
+<!-- A-65
+Z-91
+a-97
+z=123 -->

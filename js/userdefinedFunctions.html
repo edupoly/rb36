@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+
+            
+            function facto(a){
+                var f=1;
+                for(var i=a;i>=1;i--){
+                    f=f*i
+                }
+                return f;
+            }
+
+
+            var n = 8, r = 5;
+            var res = facto(n);
+            var res2 = facto(r);
+            var res3 = facto(n-r)
+            var nCr = res/(res2*res3)
+            console.log(nCr)
+
+        </script>
+    </body>
+</html>
+<!-- 
+    nCr=(n!/(r!*(n-r)!))
+ -->
+<!-- 
+    function call
+    function arguments
+    function parameters
+    function return
+    function def
+    function body
+    function signature
+ -->

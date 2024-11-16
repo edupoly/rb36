@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+          p{
+            display: none;
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+          <h1 onclick="shownext(event)">
+            Edupoly
+            <button class="sym">open</button>
+          </h1>
+          <p>
+            Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.
+          </p>
+        </div>
+        <div>
+          <h1 onclick="shownext(event)">
+            Quality Courses
+            <button class="sym">open</button>
+
+          </h1>
+          <p>
+            All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.
+          </p>
+        </div>
+        <div>
+          <h1 onclick="shownext(event)">Achievement
+            <button class="sym">open</button>
+          </h1>
+          <p>
+            We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.
+          </p>
+        </div>
+        <script>
+          function shownext(ev){
+            
+
+            if(ev.target.nextElementSibling.style.display==='block'){
+              document.querySelectorAll("p").forEach(function(el){
+                el.style.display='none'
+              })
+            }
+            else{
+              document.querySelectorAll("p").forEach(function(el){
+                el.style.display='none'
+              })
+              ev.target.nextElementSibling.style.display='block';
+            }
+          }
+          
+        </script>
+    </body>
+</html>

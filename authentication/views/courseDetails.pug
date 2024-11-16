@@ -1,0 +1,11 @@
+html    
+    head 
+        title Homepage 
+    body    
+        h1= `${course.title} CoursesDetails`
+        img(src=`${course.image}` style="width:200px")
+        h3= `Price: ${course.price}`
+        h3= `Duration: ${course.duration} months`
+        h3= `Trainer: ${course.trainer}`
+        h3= `Technolgies: ${course.technologies}`
+        a(href=`/registerCourse/${course['_id']}`) Register here

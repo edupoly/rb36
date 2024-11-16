@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+           #d2{
+            width:400px;
+            height:250px;
+            border:2px solid;
+           }
+        </style>
+    </head>
+    <body>
+        <img id="d2" onclick="rotateColor()"></img>
+        <script>
+            var colors=[
+                "https://img.freepik.com/free-psd/tasty-strawberry-sundae-isolated-transparent-background_191095-9057.jpg",
+                "https://img.freepik.com/free-vector/ice-cream-pack_98292-7078.jpg",
+                "https://img.freepik.com/free-psd/neapolitan-ice-cream-isolated-transparent-background_191095-32314.jpg?t=st=1716987153~exp=1716990753~hmac=444986dc9ff0c5290f09cf91c2404773791abf3bd6cac41027b95f700d078559&w=1060",
+                "https://img.freepik.com/free-photo/colorful-summer-treat-melting-ice-cream-generative-ai_188544-12424.jpg?t=st=1716987168~exp=1716990768~hmac=062597fc79838fccb3b8d2945480e93fd39245f79fafd466438863724677c3eb&w=1800"
+            ]
+            var i=0
+            document.getElementById("d2").src=colors[i]
+          
+            function rotateColor(){
+                i++;
+                document.getElementById("d2").src=colors[i]
+                if(i===colors.length-1){
+                    i=0
+                }
+            }
+        </script>
+    </body>
+</html>

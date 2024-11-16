@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <select onchange="showcountry(event)">
+          <option value="null" disabled selected> Please select the country</option>
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="ireland">Ireland</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+
+        </select>
+        <h1>Selected Country:<span id="d1"> </span></h1>
+        <script>
+          function showcountry(ev){
+            var t = ev.target.value;
+            document.getElementById("d1").innerHTML=t
+          }
+          
+        </script>
+    </body>
+</html>

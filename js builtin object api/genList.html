@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <ul id="d1"></ul>
+        <script>
+            var students = ["Ashrita","Mounika","Akshaya","Dhanush","Navya","Mahi"]
+            students.forEach(function(s){
+                var nli = document.createElement("li")
+                nli.innerHTML=s;
+                document.getElementById("d1").appendChild(nli)
+            })
+        </script>
+    </body>
+</html>

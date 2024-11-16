@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="d2">Lets understand JS</h1>
+        <h1>This element is created by HTML h1</h1>
+        <script>
+            var nh1 = document.createElement("h1");
+            nh1.innerHTML="This is created by JS"
+            document.body.appendChild(nh1)
+
+            document.getElementById("d2").style.color='red';
+            setTimeout(()=>{
+                document.getElementById("d2").style.color='green';
+            },3000)
+        </script>
+    </body>
+</html>
+<!-- 
+    building block
+        variables
+        datatypes
+        operators
+        expressions
+        statements(if,else,for,while)
+        arrays
+        objects
+        functions
+ -->

@@ -1,0 +1,73 @@
+<html>
+    <head></head>
+    <body>
+        <ul id="d1"></ul>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Place</th>
+                </tr>
+            </thead>
+            <tbody id="d2"></tbody>
+        </table>
+        <script>
+            var students = [
+                                {
+                                name:'jaya',
+                                gender:'female',
+                                place:'gachibowli',
+                                },
+                                {
+                                name:'dasu',
+                                gender:'male',
+                                place:'kphb'
+                                },
+                                {
+                                name:'swati',
+                                gender:'female',
+                                place:'pune'
+                                },
+                                {
+                                name:'pallavi',
+                                gender:'female',
+                                place:'assam'
+                                },
+                                {
+                                name:'kiran',
+                                gender:'male',
+                                place:'kondapur'
+                                },
+                                {
+                                name:'thirumala',
+                                gender:'male',
+                                place:'madhapur'
+                                },
+                                {
+                                name:'priya',
+                                gender:'female',
+                                place:'hitech'
+                                },
+                            ]
+            students.forEach(function(s){
+                var nli = document.createElement("li");
+                nli.innerHTML=s.name;
+                document.getElementById("d1").appendChild(nli)
+            })
+            students.forEach(function(s){
+                var ntr = document.createElement("tr");
+                var ntd = document.createElement("td");
+                ntd.innerHTML=s.name;
+                ntr.appendChild(ntd)
+                var gtd = document.createElement("td");
+                gtd.innerHTML=s.gender;
+                ntr.appendChild(gtd)
+                var ptd = document.createElement("td")
+                ptd.innerHTML=s.place;
+                ntr.appendChild(ptd)
+                document.getElementById("d2").appendChild(ntr)
+            })
+        </script>
+    </body>
+</html>

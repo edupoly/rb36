@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+          p{
+            display: none;
+          }
+        </style>
+    </head>
+    <body>
+        <div>
+          <h1 onclick="shownext(event)">Edupoly</h1>
+          <p>
+            Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.
+          </p>
+        </div>
+        <div>
+          <h1 onclick="shownext(event)">Quality Courses</h1>
+          <p>
+            All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.All our courses are of the best quality and provide immense exposure to the industry level practices.
+          </p>
+        </div>
+        <div>
+          <h1 onclick="shownext(event)">Achievement</h1>
+          <p>
+            We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.We provide internship and training certificates on successful completion of the courses.
+          </p>
+        </div>
+        <script>
+          function shownext(ev){
+            
+            if(ev.target.nextElementSibling.style.display==='block'){
+              ev.target.nextElementSibling.style.display='none'
+            }
+            else{
+              ev.target.nextElementSibling.style.display='block';
+            }
+
+          }
+          
+        </script>
+    </body>
+</html>

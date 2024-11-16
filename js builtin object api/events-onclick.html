@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>Count:<span id="cnt"></span></h1>
+        <button onclick="inc()">Increment</button>
+        <button onclick="dec()">Decrement</button>
+        <script>
+            var count=0;
+            document.getElementById("cnt").innerHTML=count;
+            function inc(){
+                count++;
+                document.getElementById("cnt").innerHTML=count;
+            }
+            function dec(){
+                count--;
+                document.getElementById("cnt").innerHTML=count;
+            }
+        </script>
+    </body>
+</html>

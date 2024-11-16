@@ -1,0 +1,10 @@
+html    
+    head 
+        title Homepage 
+    body    
+        h1 Courses 
+        ul 
+            each course in courses 
+                li= course.title
+                    a(href="course/"+course._id) more
+    

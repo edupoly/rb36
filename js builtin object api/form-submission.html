@@ -1,0 +1,75 @@
+<html>
+    <head></head>
+    <body>
+        <form onsubmit="showdata(event)">
+            Please Enter Your Name:<input type="text" onkeyup="updatename(event)">
+            <br>
+            Please Enter Your DOB:<input type="date" onchange="updateDOB(event)">
+            <br>
+            Please Select Gender:
+            <br>
+            <input type="radio" name="gen" value="male" onchange="updategender(event)">:Male
+            <input type="radio" name="gen" value="female" onchange="updategender(event)">:Female
+            <br>
+           
+            <button type="submit">Add Student</button>
+        </form>
+        <table border="2" width="300px">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody id="d1">
+                
+            </tbody>
+        </table>
+        <div id="d2"></div>
+        <script>
+            var fullname='';
+            var dob=''
+            var gender='';
+            var students = []
+            function updatename(ev){
+                fullname=ev.target.value;
+            }
+            function updateDOB(ev){
+                dob=ev.target.value;
+            }
+            function updategender(ev){
+                gender=ev.target.value;
+            }
+            function showdata(ev){
+                ev.preventDefault();
+
+                var std = {
+                    fullname:fullname,
+                    dob:dob,
+                    gender:gender
+                }
+                students.push(std)
+                genTable();
+            }
+            function genTable(){
+                console.log(students)
+                document.getElementById("d1").innerHTML=""
+                students.forEach(function(student){
+                    var ntr = document.createElement("tr")
+                    var fntd = document.createElement("td")
+                    fntd.innerHTML=student.fullname;
+                    var dobtd = document.createElement("td")
+                    dobtd.innerHTML=student.dob;
+                    var gentd = document.createElement("td")
+                    gentd.innerHTML=student.gender;
+                    ntr.appendChild(fntd)
+                    ntr.appendChild(dobtd)
+                    ntr.appendChild(gentd)
+                    console.log(ntr)
+                    document.getElementById("d1").appendChild(ntr);
+                })
+            }
+        </script>
+    </body>
+</html>

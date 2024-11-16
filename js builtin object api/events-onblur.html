@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <input type="text" id="d2" onblur="updateText()">
+        <h1>Entered Text: <span id="d1"></span></h1>
+        <script>
+           function updateText(){
+            var t = document.getElementById("d2").value;
+            document.getElementById("d1").innerHTML=t;
+           }
+        </script>
+    </body>
+</html>

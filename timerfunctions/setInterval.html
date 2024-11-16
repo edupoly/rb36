@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // setTimeout(function(){},2000)
+            // setInterval(function(){console.log("hello")},2000);
+            
+            var ar = "Pawan Kalyan";
+
+            var i=0;
+
+            var t1 = setInterval(function(){
+                        document.write(ar[i]);
+                        i++;
+                        if(i==ar.length){
+                            clearInterval(t1)
+                        }
+                    },100)
+
+        </script>
+    </body>
+</html>

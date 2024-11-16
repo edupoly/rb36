@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="d1" onkeyup="abc(event)">
+
+        <script>
+            function abc(e){
+                if(e.key.charCodeAt(0)>=48 &&e.key.charCodeAt(0)<=57 ){
+                    console.log(e.key.charCodeAt(0))
+                }
+                else{
+                    var x = document.getElementById("d1").value;
+                    var y = x.slice(0,x.length-1);
+                    document.getElementById("d1").value=y;
+                }
+            }
+            // for(var j=65;j<=125;j++){
+            //     console.log(j,String.fromCharCode(j))
+            // }
+        </script>
+    </body>
+</html>
+<!-- A-65
+Z-91
+a-97
+z=123 -->

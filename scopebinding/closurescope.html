@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var ar = [10,20,30,18,57];
+            var cr = ['sai','nani','balu']
+            var br = [];
+            // for(let i=0;i<=ar.length-1;i++){
+            //     br.push(function(){console.log(i)})
+            // }
+            // console.log(br)
+            // br[1]()
+            // br[0]()
+            // br[3]()
+
+            ar.forEach(function(a,i){
+                br.push(function(){console.log(i)})
+            })
+            console.dir(br);
+            
+            br[3]();
+
+        </script>
+    </body>
+</html>

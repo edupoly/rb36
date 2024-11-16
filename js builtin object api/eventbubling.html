@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #d1{
+                width: 500px;
+                height:400px;
+                padding:50px;
+                background-color: lightcoral;
+            }
+            #d2{
+                width: 350px;
+                height:250px;
+                padding:50px;
+                background-color: blueviolet;
+            }
+            #d3{
+                width: 250px;
+                height:150px;
+                padding:50px;
+                background-color: turquoise;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="abc()">
+            <div id="d2" onclick="xyz()">
+                <div id="d3" onclick="pqr()"></div>
+            </div>
+        </div>
+        <script>
+            function abc(){
+                alert('clicked on d1')
+            }
+            function xyz(){
+                alert('clicked on d2')
+            }
+            function pqr(){
+                alert('clicked on d3')
+            }
+        </script>
+    </body>
+</html>

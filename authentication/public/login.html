@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #err{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="username" id="username">
+            <br>
+            <input type="text" name="password" placeholder="password" id="password">
+            <h1 id="err">Check Your Credentials</h1>
+            <button>Login</button>
+        </form>
+        <script>
+            function login(e){
+                e.preventDefault();
+                var user = {
+                    username:document.getElementById('username').value,
+                    password:document.getElementById('password').value,
+                }
+                fetch("http://localhost:8088/login",{
+                    method:'POST',
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify(user)
+                }).then((res)=>{
+                    res.json().then(function(data){
+                        if(data.msg==='failed'){
+                            alert("check")
+                            document.getElementById("err").style.display='block'
+                        }
+                    })
+                   
+                }).catch(()=>{})
+            }
+        </script>
+    </body>
+</html>

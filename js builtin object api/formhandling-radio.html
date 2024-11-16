@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <input type="radio" name="gen" onchange="show(event)" value="male">:Male
+        <input type="radio" name="gen" onchange="show(event)" value="female">:Female
+        <h1>Selected Gender:<span id="d1"> </span></h1>
+        <script>
+          function show(ev){
+            var t = ev.target.value;
+            document.getElementById("d1").innerHTML=t
+          }
+          
+        </script>
+    </body>
+</html>

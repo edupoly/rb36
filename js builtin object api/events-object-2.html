@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <input type="text" onkeyup="text(event)" id="d2">
+        <h1>Entered Text:<span id="d1"></span></h1>
+        <script>
+          function text(ev){
+            var t = ev.target.value;
+            document.getElementById("d1").innerHTML=t
+          }
+          
+        </script>
+    </body>
+</html>

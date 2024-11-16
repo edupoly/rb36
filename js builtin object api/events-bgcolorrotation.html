@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+           #d2{
+            width:400px;
+            height:250px;
+            border:2px solid;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="d2" onclick="rotateColor()"></div>
+        <script>
+            var colors=['red','blue','orange','pink','green','yellow']
+            var i=0
+            document.getElementById("d2").style.backgroundColor=colors[i]
+          function rotateColor(){
+            document.getElementById("d2").style.backgroundColor=colors[i]
+            i++;
+            if(i===6){
+                i=0
+            }
+          }
+        </script>
+    </body>
+</html>

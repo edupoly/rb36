@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+           #d1{
+            width:200px;
+            height:150px;
+            border:2px solid;
+           }
+           #d2{
+            width:200px;
+            height:150px;
+            border:2px solid;
+           }
+           #d3{
+            width:200px;
+            height:150px;
+            border:2px solid;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="redcolor(event)"></div>
+        <div id="d2" onclick="redcolor(event)"></div>
+        <div id="d3" onclick="redcolor(event)"></div>
+        <script>
+          function redcolor(ev){
+            ev.target.style.backgroundColor="red"
+          }
+          
+        </script>
+    </body>
+</html>
